@@ -1,6 +1,6 @@
 # Pitch Coordinate From ⚽ SN-GS24
 
-This dataset consist of the pitch coordinate of the [sn-gamestate-24](https://github.com/SoccerNet/sn-gamestate) dataset.
+This dataset consist of the pitch coordinate of the [sn-gamestate-24](https://github.com/SoccerNet/sn-gamestate) dataset. By using the data provided in this repository, you agree to comply with the SoccerNet license and usage terms.
 
 ## Download SN data
 1. Install the required package
@@ -14,7 +14,10 @@ mySoccerNetDownloader = SoccerNetDownloader(LocalDirectory="data/SoccerNetGS")
 mySoccerNetDownloader.downloadDataTask(task="gamestate-2024",
                                        split=["train", "valid", "test", "challenge"])
 ```
-
+3. Extract the pitch coordinate data
+```
+python extract.py
+```
 ## Folder Structure
 ```
 pitch_coord_gs24/
